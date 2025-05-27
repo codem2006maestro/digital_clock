@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock & Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="theme-toggle">
+        <button id="themeToggle">🌙</button>
+    </div>
+    <div class="container">
+        <div class="clock-container">
+            <h2>Digital Clock</h2>
+            <div id="clock" class="display">00:00:00</div>
+        </div>
+        
+        <div class="timer-container">
+            <h2>Countdown Timer</h2>
+            <div id="timer" class="display">00:00:00</div>
+            <div id="timerStatus" class="timer-status"></div>
+            <div class="controls">
+                <input type="number" id="hours" min="0" max="23" placeholder="HH">
+                <input type="number" id="minutes" min="0" max="59" placeholder="MM">
+                <input type="number" id="seconds" min="0" max="59" placeholder="SS">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+    <audio id="timerSound" src="data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html> 
